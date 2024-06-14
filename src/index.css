@@ -1,13 +1,45 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: "lato", sans-serif;
+  font-size: 62.5%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counters {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.counter {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.counter:not(:last-child) {
+  margin-top: 3rem;
+}
+
+.counter button {
+  padding: 0.3rem 1rem;
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+.date {
+  font-size: 4rem;
 }
